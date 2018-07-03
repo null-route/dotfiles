@@ -5,6 +5,9 @@ for x in vim git curl htop zsh; do
 	sudo apt-get install $x
 done
 
+echo "Installing Oh My Zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 zsh_theme=my.zsh-theme
 zsh_theme_target=~/.oh-my-zsh/themes/
 echo "Copying $zsh_theme to $zsh_theme_target"
