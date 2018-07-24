@@ -8,7 +8,7 @@ local prompt_char="»"
 local return_status="%(?:$prompt_char:%{$fg[red]%}$prompt_char)"
 
 # Form left hand prompt
-PROMPT='%B${user}@${host}[${path_string}] %# ${return_status} %b'
+PROMPT='%B${user}@${host}[${path_string}] ${return_status} %b'
 
 # Git plugin configuration
 ZSH_THEME_GIT_PROMPT_PREFIX="%B["
